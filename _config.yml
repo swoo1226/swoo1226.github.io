@@ -1,8 +1,6 @@
-# Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Sangwoo Kim
+title: Sangwoo Kim | Web Developer
+description: Personal Blog for Sangwoo Kim (Web Developer)
 tags:
   - blog
   - template
@@ -19,56 +17,41 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: copycat1226@gmail.com
 disqus_username: disqus_username
-
-
-# Social Media Settings
-# Remove the item if you don't need it
-github_username: github_username
+github_username: swoo1226
 facebook_username: facebook_username
 twitter_username: twitter_username
-instagram_username: instagram_username
+instagram_username: phot_o_matic
 linkedin_username: linkedin_username
 medium_username: medium_username
-
-
-# Posts Settings
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
 two_columns_layout: true
-
-
-# Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
-language: "en"
+baseurl: ''
+url: ''
+google_analytics: UA-XXXXXXXX-X
+language: en
 categories_folder: category
-sent_message_url: "/contact/message-sent/"
-
-
-# Build settings
+sent_message_url: /contact/message-sent/
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+permalink: '/:title/'
 collections:
   authors:
     output: true
-paginate_path: "/page/:num/"
+paginate_path: '/page/:num/'
 show_get_theme_btn: true
 use_logo: false
-
-# Content paginator
 paginate_content:
   enabled: true
   debug: false
   collections:
     - posts
   auto: false
-  separator: "--page-break--"
-  permalink: "/:num/"
+  separator: '--page-break--'
+  permalink: '/:num/'
   seo_canonical: true
   properties:
     part:
@@ -77,28 +60,19 @@ paginate_content:
       is_generated: true
     single:
       is_generated: true
-
-# SASS
 sass:
   style: compressed
-
-# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
-
-# Exclude my node related stuff
-exclude: [
-  'package.json',
-  'package-lock.json',
-  'src',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
-
-# Theme
+exclude:
+  - package.json
+  - package-lock.json
+  - src
+  - node_modules
+  - initpost.sh
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - README.md
 version: v3.1.0
